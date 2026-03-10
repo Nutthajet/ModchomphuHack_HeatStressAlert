@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { AnimalType, WeatherData } from "../types";
 import { ANIMAL_NAMES_TH } from '../constants';
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY
 
 if (!API_KEY) {
     console.warn("API_KEY is not set. AI features will be disabled.");
