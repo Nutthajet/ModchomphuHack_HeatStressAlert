@@ -1,8 +1,8 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/genai";
 
 export default async function handler(req, res) {
 
-  const ai = new GoogleGenAI({
+  const genAI = new GoogleGenerativeAI({
     apiKey: process.env.GEMINI_API_KEY
   });
 
@@ -18,12 +18,12 @@ export default async function handler(req, res) {
 ตอบแบบสั้น เข้าใจง่าย เป็นข้อๆ
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: prompt
-  });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const result = await model.generateContent(prompt);
+  const response = await result.response;
+  const text = response.text();
 
   res.status(200).json({
-    text: response.text
+    text: text
   });
 }

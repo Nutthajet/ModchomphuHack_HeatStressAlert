@@ -1,3 +1,4 @@
+import React, { FC } from 'react';
 import { AnimalType, THIStatus } from './types';
 
 // THI Thresholds for different animals based on Thai research data
@@ -38,7 +39,7 @@ export const STATUS_TEXT_TH: { [key in THIStatus]: string } = {
 };
 
 // SVG Icons as React components
-export const CowIcon: React.FC<{className?: string}> = ({className}) => (
+export const CowIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
         <defs>
             <radialGradient id="cow_head_gradient" cx="50%" cy="10%" r="90%" fx="50%" fy="10%">
@@ -79,7 +80,7 @@ export const CowIcon: React.FC<{className?: string}> = ({className}) => (
     </svg>
 );
 
-export const PigIcon: React.FC<{className?: string}> = ({className}) => (
+export const PigIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
         <defs>
             <radialGradient id="pig_gradient" cx="50%" cy="0%" r="100%" fx="50%" fy="0%">
@@ -99,7 +100,7 @@ export const PigIcon: React.FC<{className?: string}> = ({className}) => (
     </svg>
 );
 
-export const ChickenIcon: React.FC<{className?: string}> = ({className}) => (
+export const ChickenIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
          <defs>
             <radialGradient id="chicken_gradient" cx="50%" cy="50%" r="70%" fx="60%" fy="40%">
@@ -117,7 +118,7 @@ export const ChickenIcon: React.FC<{className?: string}> = ({className}) => (
     </svg>
 );
 
-export const DuckIcon: React.FC<{className?: string}> = ({className}) => (
+export const DuckIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
         <defs>
             <radialGradient id="duck_gradient" cx="50%" cy="50%" r="70%" fx="60%" fy="40%">
@@ -134,7 +135,7 @@ export const DuckIcon: React.FC<{className?: string}> = ({className}) => (
     </svg>
 );
 
-export const GoatIcon: React.FC<{className?: string}> = ({className}) => (
+export const GoatIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
          <defs>
             <linearGradient id="goat_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -150,7 +151,7 @@ export const GoatIcon: React.FC<{className?: string}> = ({className}) => (
     </svg>
 );
 
-export const SheepIcon: React.FC<{className?: string}> = ({className}) => (
+export const SheepIcon: FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 128 128">
         <defs>
             <radialGradient id="wool_gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
