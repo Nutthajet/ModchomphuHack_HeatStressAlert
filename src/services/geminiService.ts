@@ -1,4 +1,4 @@
-import { AnimalType, WeatherData } from "../../types";
+import { AnimalType, WeatherData } from "../types";
 
 export const getHeatStressAdvice = async (
   animal: AnimalType,
