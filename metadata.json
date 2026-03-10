@@ -1,0 +1,5 @@
+{
+  "name": "Heat-Stress Alert3.0",
+  "description": "An AI assistant for small-scale livestock farmers to predict and manage heat stress in animals using THI forecasts and actionable advice.",
+  "requestFramePermissions": []
+}
