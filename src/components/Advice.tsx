@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { AnimalType, Settings, WeatherData } from '../types';
-import { getHeatStressAdvice } from '../services/geminiService';
+import { getHeatStressAdvice } from '../src/services/geminiService';
 import { ANIMAL_NAMES_TH } from '../constants';
 
 interface AdviceProps {

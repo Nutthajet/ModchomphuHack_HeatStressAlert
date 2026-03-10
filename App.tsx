@@ -7,7 +7,7 @@ import Advice from './components/Advice';
 import SettingsScreen from './components/Settings';
 import Map from './components/Map';
 import NotificationsPanel from './components/NotificationsPanel';
-import { getMockWeatherData, getAnimalTHIData } from './services/weatherService';
+import { getMockWeatherData, getAnimalTHIData } from './src/services/weatherService';
 import { ANIMAL_NAMES_TH, STATUS_TEXT_TH } from './constants';
 
 

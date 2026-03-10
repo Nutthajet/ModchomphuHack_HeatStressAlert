@@ -3,7 +3,7 @@
 import React from 'react';
 import { AnimalType, THIStatus, WeatherData, ForecastData, AnimalTHIData, Settings, Plan } from '../types';
 import { ANIMAL_NAMES_TH, STATUS_TEXT_TH, CowIcon, PigIcon, ChickenIcon, DuckIcon, GoatIcon, SheepIcon } from '../constants';
-import { getTHIStatus } from '../services/weatherService';
+import { getTHIStatus } from '../src/services/weatherService';
 
 interface DashboardProps {
     settings: Settings;

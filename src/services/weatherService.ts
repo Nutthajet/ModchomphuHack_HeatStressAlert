@@ -1,5 +1,5 @@
-import { AnimalType, THIStatus, WeatherData, ForecastData, AnimalTHIData, NationwideTHIData } from '../types';
-import { THI_THRESHOLDS } from '../constants';
+import { AnimalType, THIStatus, WeatherData, ForecastData, AnimalTHIData, NationwideTHIData } from '../../types';
+import { THI_THRESHOLDS } from '../../constants';
 
 // Function to calculate THI using the new formula
 const calculateTHI = (temperature: number, humidity: number): number => {
