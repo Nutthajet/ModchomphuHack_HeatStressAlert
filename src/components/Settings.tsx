@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimalType, Settings, WeatherData, Plan } from '../types';
-import { ANIMAL_NAMES_TH } from '../../constants';
+import { ANIMAL_NAMES_TH } from '../constants';
 
 interface SettingsProps {
     settings: Settings;

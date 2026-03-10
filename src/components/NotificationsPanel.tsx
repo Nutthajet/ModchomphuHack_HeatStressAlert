@@ -1,6 +1,5 @@
 import React from 'react';
 import { Notification, THIStatus } from '../types';
-import { ANIMAL_NAMES_TH } from '../../constants';
 
 interface NotificationsPanelProps {
     isOpen: boolean;

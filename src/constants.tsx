@@ -1,4 +1,3 @@
-import React from 'react';
 import { AnimalType, THIStatus } from './types';
 
 // THI Thresholds for different animals based on Thai research data
